@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Jun  4 09:46:30 2020
+Created on Thu Jun  4 11:00:56 2020
 
 @author: EstebanRM
 """
@@ -46,6 +46,7 @@ def how_many_max_values_sequential(ar):
 def cuantos(ar):
         print("entra1")
         maxValue = 0
+        maxValue = ar[i]
         for i in range(len(ar)):
             if i == 0:
                 maxValue = ar[i]
@@ -63,7 +64,7 @@ def contar(maxValue,ar):
         return contValue
 
 def how_many_max_values_parallel():
-    ar_count = 1000
+    ar_count = 400000
     ar1 = [random.randrange(1,4) for i in range(int(ar_count/2))]
     ar2 = [random.randrange(1,4) for j in range(int(ar_count/2),ar_count)]
     maxValue = 0
@@ -94,7 +95,7 @@ def how_many_max_values_parallel():
 
 if __name__ == '__main__':
        
-    ar_count = 4000000
+    ar_count = 1000
     ar1 = [random.randrange(1,4) for i in range(int(ar_count/2))]
     ar2 = [random.randrange(1,4) for j in range(int(ar_count/2),ar_count)]
     inicioPar = time.time()
